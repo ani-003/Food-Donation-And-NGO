@@ -1,0 +1,75 @@
+.review{
+  height: auto;
+  width: 300px;
+}
+
+
+.cat-img{
+
+    height: 70px;
+    width: 90px;
+  
+  }
+  
+ 
+  
+  .footer{
+    background-color: #1A5319;
+    color: aliceblue;
+  }
+  
+  .footer h1, p{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing:auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .footer p{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing:auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .social-icon {
+    margin: 0 10px;
+    color:aliceblue; /* Change this to match your design */
+  }
+  
+  .social-icon:hover {
+    color: #007bff; /* Change this to your preferred hover color */
+  }
+  
+  
+  .cat-box{
+    width: 250px;
+    margin-left: -10px;
+    
+  }
+
+  .flex1 {
+    display: flex;
+    flex-direction: row; /* Horizontal row for desktop */
+  }
+
+  .success{
+    background-color: lightcyan;
+    
+  }
+
+  @media (max-width: 400px) {
+    .flex1 {
+      flex-direction: column; /* Vertical column for mobile */
+    }
+
+    .cat-box{
+      width: 110%;
+    }
+  }

@@ -1,0 +1,35 @@
+.navbar{
+    background-color: #9BDBA6;
+}
+
+.nav-item{
+  
+   font-weight: 400;
+    padding-left:10px ;
+    padding-right: 10px;
+    
+}
+
+.nav-item:hover{
+    background-color:darkseagreen;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navbar-nav{
+    padding-left: 50px;
+}
+
+.navbar-brand{
+    padding-left: 10px;
+}
+
+
+
+.form-control{
+    border-radius: 30px;
+}
+
+.btn{
+    border-radius: 30px;
+}

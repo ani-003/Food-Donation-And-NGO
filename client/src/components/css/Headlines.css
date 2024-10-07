@@ -1,0 +1,46 @@
+.headlines-container { 
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: lightcyan;
+  text-align: center;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing:auto;
+  font-style: normal;
+}
+
+.stats-box {
+  
+  font-family: "Inter", sans-serif;
+  font-optical-sizing:auto;
+font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.stats-box div {
+  width: 30%;
+  margin-top: 5px;
+  /* padding: 10px; */
+  /* border: 2px solid black; */
+  border-radius: 5px;
+}
+
+@media (max-width: 400px) {
+  .headlines-container {
+     width: 90%;
+     height: 120px;
+     font-size: small;
+  }
+
+  .headlines-container h2{
+    font-size: x-large;
+  }
+  .headlines-container p{
+    font-size: medium;
+  }
+}

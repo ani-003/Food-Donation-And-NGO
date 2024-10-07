@@ -1,0 +1,17 @@
+.car-box{
+    height: 400px;
+}
+
+.image{
+    height: 400px;
+}
+
+@media (max-width: 400px) {
+    .car-box{
+      height: 200px;
+    }
+    .image{
+        height: 200px;
+    }
+
+  }

@@ -1,0 +1,92 @@
+/* src/components/styles.css */
+
+/* Grid and Card Styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px; /* Reduced gap */
+  position: relative;
+}
+
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  text-align: left;
+  padding: 10px; /* Reduced padding */
+  border-radius: 8px; /* Adjusted border-radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%; /* Adjust based on your layout */
+  height: 200%; /* Adjust based on your layout */
+  background: linear-gradient(135deg, #0aebab, #0aebab , #0b03a5);
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+/* Button Styles */
+.button {
+  border: 1px solid #ddd;
+  border-radius: 6px; /* Adjusted border-radius */
+  padding: 8px; /* Reduced padding */
+  text-align: center;
+  align-self: center;
+  width: 150px; /* Reduced width */
+  margin: 8px; /* Reduced margin */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+}
+
+.button-icon {
+  font-size: 18px; /* Reduced font size */
+  margin-bottom: 4px; /* Reduced margin */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.button:hover .button-icon {
+  color: #4CAF50; /* Change color on hover */
+}
+
+.button-title {
+  font-size: 14px; /* Reduced font size */
+  font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  .grid-container{
+     width: 100%;
+  }
+
+  .card{
+    width: auto;
+    height: 200px;
+  }
+
+  h3{
+    font-size: larger;
+    font-weight: 600;
+  }
+
+  p{
+    font-size: medium;
+    font-weight: 500;
+  }
+
+  .flex-2{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+  }
+}
