@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cookieParser()); // Use cookie-parser
 
 // Database connection
-mongoose.connect('mongodb+srv://anirband2003:JWx4A761BjneF1pL@leflif01.ra2t2de.mongodb.net/?retryWrites=true&w=majority&appName=leflif01', {
+mongoose.connect('', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
